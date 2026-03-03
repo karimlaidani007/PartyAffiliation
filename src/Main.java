@@ -16,7 +16,7 @@ public class Main {
         // Else:
         //      Output "You get an Other."
 
-        Scanner in = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.println("Party Affiliation Menu:");
         System.out.println("D - Democrat");
@@ -24,18 +24,23 @@ public class Main {
         System.out.println("I - Independent");
         System.out.print("Enter your choice (D, R, or I): ");
 
-        String choice = in.nextLine(); // safe for any input (String)
+        String choice = input.nextLine(); // safe for any input (String)
 
         // normalize input (trim spaces)
         choice = choice.trim();
 
-        if (choice.equalsIgnoreCase("D")) {
+        if (choice.equalsIgnoreCase("D"))
+        {
             System.out.println("You get a Democratic Donkey.");
-        } else if (choice.equalsIgnoreCase("R")) {
+        }
+        else if (choice.equalsIgnoreCase("R"))
+        {
             System.out.println("You get a Republican Elephant.");
-        } else if (choice.equalsIgnoreCase("I")) {
+        } else if
+        (choice.equalsIgnoreCase("I")) {
             System.out.println("You get an Independent Person.");
-        } else {
+        } else
+        {
             System.out.println("You get an Other.");
         }
 
